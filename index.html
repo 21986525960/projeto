@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação Financeira para Todos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Educação Financeira para Todos</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#importancia">Importância</a></li>
+                    <li><a href="#orcamento">Orçamento</a></li>
+                    <li><a href="#planejamento">Planejamento</a></li>
+                    <li><a href="#gastos">Controle de Gastos</a></li>
+                    <li><a href="#poupanca">Poupança</a></li>
+                    <li><a href="#credito">Uso do Crédito</a></li>
+                    <li><a href="#endividamento">Endividamento</a></li>
+                    <li><a href="#investimentos">Investimentos</a></li>
+                    <li><a href="#direitos">Direitos</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#cadastro">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="importancia" class="container">
+        <h2>Importância da Educação Financeira</h2>
+        <p>Entenda como o conhecimento financeiro pode melhorar a sua qualidade de vida e proporcionar mais segurança e estabilidade.</p>
+    </section>
+
+    <section id="orcamento" class="container">
+        <h2>Orçamento Pessoal e Familiar</h2>
+        <p>Saiba como elaborar e manter um orçamento, registrando todas as receitas e despesas, e gastando menos do que ganha.</p>
+        <div class="form-container">
+            <h2>Adicionar Receita/Despesa</h2>
+            <form id="budgetForm" onsubmit="return addTransaction(event)">
+                <label for="type">Tipo:</label>
+                <select id="type" name="type" required>
+                    <option value="receita">Receita</option>
+                    <option value="despesa">Despesa</option>
+                </select>
+
+                <label for="description">Descrição:</label>
+                <input type="text" id="description" name="description" required>
+
+                <label for="amount">Valor:</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <input type="submit" value="Adicionar">
+            </form>
+        </div>
+
+        <div class="transactions-container">
+            <h2>Transações</h2>
+            <ul id="transactionsList"></ul>
+        </div>
+
+        <div class="summary-container">
+            <h2>Resumo</h2>
+            <p>Receitas Totais: R$ <span id="totalIncome">0.00</span></p>
+            <p>Despesas Totais: R$ <span id="totalExpense">0.00</span></p>
+            <p>Saldo: R$ <span id="balance">0.00</span></p>
+        </div>
+    </section>
+
+    <section id="planejamento" class="container">
+        <h2>Planejamento Financeiro</h2>
+        <p>Aprenda a definir metas financeiras e a traçar um plano para alcançá-las, melhorando sua situação econômica a longo prazo.</p>
+    </section>
+	<a href="file:///C:/Users/ronal/OneDrive/%C3%81rea%20de%20Trabalho/Trabalho%20Final%20Educa%C3%A7%C3%A3o%20Financeira/Planejamento%20Financeiro/index.html">Planejamento Financeiro</a>
+	
+    <section id="gastos" class="container">
+        <h2>Controle de Gastos</h2>
+        <p>Identifique despesas essenciais e não essenciais, e descubra como reduzir gastos supérfluos e evitar compras impulsivas.</p>
+    </section>
+	<a href="file:///C:/Users/ronal/OneDrive/%C3%81rea%20de%20Trabalho/Trabalho%20Final%20Educa%C3%A7%C3%A3o%20Financeira/Controle%20de%20Gastos/index.html">Controle de Gastos</a>
+
+    <section id="poupanca" class="container">
+        <h2>Poupança e Reserva de Emergência</h2>
+        <p>Entenda a importância de poupar regularmente e criar um fundo de emergência para situações imprevistas.</p>
+    </section>
+	<a href="file:///C:/Users/ronal/OneDrive/%C3%81rea%20de%20Trabalho/Trabalho%20Final%20Educa%C3%A7%C3%A3o%20Financeira/Poupan%C3%A7a%20e%20Reserva%20de%20Emerg%C3%AAncia/index.html">Criar um fundo de emergência</a>
+
+    <section id="credito" class="container">
+        <h2>Uso Consciente do Crédito</h2>
+        <p>Informações sobre diferentes tipos de crédito e como usá-los de forma responsável para evitar o endividamento excessivo.</p>
+    </section>
+	<a href="file:///C:/Users/ronal/OneDrive/%C3%81rea%20de%20Trabalho/Trabalho%20Final%20Educa%C3%A7%C3%A3o%20Financeira/Uso%20Consciente%20do%20Cr%C3%A9dito/index.html">Informações</a>
+
+    <section id="endividamento" class="container">
+        <h2>Endividamento e Renegociação de Dívidas</h2>
+        <p>Orientações sobre como lidar com dívidas, priorizar pagamentos e negociar melhores condições com credores.</p>
+    </section>
+<a href="file:///C:/Users/ronal/OneDrive/%C3%81rea%20de%20Trabalho/Trabalho%20Final%20Educa%C3%A7%C3%A3o%20Financeira/Endividamento%20e%20Renegocia%C3%A7%C3%A3o%20de%20D%C3%ADvidas/index.html">Orientações</a>
+    <section id="investimentos" class="container">
+        <h2>Investimentos Simples</h2>
+        <p>Introdução a opções de investimentos acessíveis e de baixo risco, como poupança, CDBs e tesouro direto.</p>
+    </section>
+<a href="file:///C:/Users/ronal/OneDrive/%C3%81rea%20de%20Trabalho/Trabalho%20Final%20Educa%C3%A7%C3%A3o%20Financeira/Investimentos%20Simples/index.html">Dicas</a>
+    <section id="direitos" class="container">
+        <h2>Direitos do Consumidor</h2>
+        <p>Conheça os direitos e proteções disponíveis para consumidores, especialmente em relação a produtos financeiros e serviços bancários. Para mais informações, acesse o <a href="https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm" target="_blank">Código de Defesa do Consumidor</a>.</p>
+    </section>
+
+    <section id="beneficios" class="container">
+        <h2>Acesso a Benefícios e Programas Sociais</h2>
+        <p>Informações sobre programas governamentais e sociais que podem ajudar a complementar a renda e fornecer suporte financeiro. Para saber mais, visite a <a href="https://www.caixa.gov.br/programas-sociais/Paginas/default.aspx" target="_blank">Caixa Econômica Federal</a>.</p>
+    </section>
+
+    <section id="cadastro" class="container">
+        <h2>Cadastro para Interessados</h2>
+        <div class="form-container">
+            <form id="cadastroForm" onsubmit="return handleFormSubmit(event)">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" required>
+
+                <input type="submit" value="Cadastrar">
+            </form>
+            <div id="successMessage" class="success-message">
+                Cadastro enviado com sucesso!
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Educação Financeira para Todos &copy; 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

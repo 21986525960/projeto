@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poupança e Reserva de Emergência</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a href="C:/Users/ronal/OneDrive/Área%20de%20Trabalho/Trabalho%20Final%20Educação%20Financeira/index.html" class="top-left-link">Voltar</a>
+    <header>
+        <h1>Poupança e Reserva de Emergência</h1>
+    </header>
+    <main>
+        <section id="importance">
+            <h2>Importância da Poupança e da Reserva de Emergência</h2>
+            <article>
+                <h3>Poupança</h3>
+                <p><strong>Segurança Financeira</strong></p>
+                <ul>
+                    <li>Proteção Contra Emergências</li>
+                    <li>Estabilidade</li>
+                </ul>
+                <p><strong>Planejamento para o Futuro</strong></p>
+                <ul>
+                    <li>Objetivos de Longo Prazo</li>
+                    <li>Investimentos</li>
+                </ul>
+                <p><strong>Independência Financeira</strong></p>
+                <ul>
+                    <li>Redução da Dependência de Crédito</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Reserva de Emergência</h3>
+                <p><strong>Cobertura de Despesas Inesperadas</strong></p>
+                <ul>
+                    <li>Acesso Rápido a Dinheiro</li>
+                </ul>
+                <p><strong>Manutenção do Padrão de Vida</strong></p>
+                <ul>
+                    <li>Evitar Comprometimento do Orçamento Mensal</li>
+                </ul>
+                <p><strong>Prevenção de Dívidas</strong></p>
+                <ul>
+                    <li>Evitar Juros e Multas</li>
+                </ul>
+                <p><strong>Facilidade de Reposição</strong></p>
+                <ul>
+                    <li>Estratégia de Reposição</li>
+                </ul>
+            </article>
+        </section>
+        <section id="calculator">
+            <h2>Calculadora de Poupança e Reserva de Emergência</h2>
+            <form id="calcForm">
+                <label for="monthlyIncome">Renda Mensal (R$):</label>
+                <input type="number" id="monthlyIncome" required>
+                <label for="monthlyExpenses">Despesas Mensais (R$):</label>
+                <input type="number" id="monthlyExpenses" required>
+                <label for="emergencyMonths">Meses para Reserva de Emergência:</label>
+                <input type="number" id="emergencyMonths" required>
+                <button type="button" onclick="calculate()">Calcular</button>
+            </form>
+            <div id="results">
+                <h3>Resultados</h3>
+                <p>Poupança Mensal: R$ <span id="savings"></span></p>
+                <p>Reserva de Emergência: R$ <span id="emergencyFund"></span></p>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

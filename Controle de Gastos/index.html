@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Gastos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a href="C:/Users/ronal/OneDrive/Área%20de%20Trabalho/Trabalho%20Final%20Educação%20Financeira/index.html" class="top-left-link">Voltar</a>
+    <header>
+        <h1>Controle de Gastos</h1>
+    </header>
+    <main>
+        <section id="dicas">
+            <h2>Dicas de Controle de Gastos</h2>
+            <ul>
+                <li>Identifique despesas essenciais e não essenciais</li>
+                <li>Reduza gastos supérfluos</li>
+                <li>Evite compras impulsivas</li>
+                <li>Crie um orçamento mensal</li>
+                <li>Revise seus gastos regularmente</li>
+                <li>Automatize suas economias</li>
+                <li>Envolva a família</li>
+                <li>Eduque-se financeiramente</li>
+            </ul>
+        </section>
+        <section id="calculadora">
+            <h2>Calculadora de Controle de Gastos</h2>
+            <form id="gastosForm">
+                <label for="essenciais">Despesas Essenciais:</label>
+                <input type="number" id="essenciais" required>
+                
+                <label for="naoEssenciais">Despesas Não Essenciais:</label>
+                <input type="number" id="naoEssenciais" required>
+                
+                <label for="renda">Renda Mensal:</label>
+                <input type="number" id="renda" required>
+                
+                <button type="button" onclick="calcularGastos()">Calcular</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
